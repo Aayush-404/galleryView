@@ -21,7 +21,10 @@ class _AlbumsOpState extends State<AlbumsOp> {
           children: [
             GestureDetector(
               onTap: (){
-                ImageView();
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ImageView()),
+                );
               },
               child: Card(
                 elevation: 8.0,

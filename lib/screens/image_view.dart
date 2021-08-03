@@ -10,24 +10,27 @@ class ImageView extends StatefulWidget {
 class _ImageViewState extends State<ImageView> {
   @override
   Widget build(BuildContext context) {
-    return GridView.extent(
-      maxCrossAxisExtent: 150.0,
-      mainAxisSpacing: 5.0,
-      crossAxisSpacing: 5.0,
-      padding: const EdgeInsets.all(5.0),
-      children: _buildGridTiles(12),
-      //crossAxisCount: 3,
-      // children: List.generate(9, (index) {
-      //   return Center(
-      //     child: Card(
-      //       elevation: 8.0,
-      //       margin: EdgeInsets.all(7.0),
-      //       child: Image.network(
-      //       "https://png.pngtree.com/png-clipart/20201105/ourlarge/pngtree-orange-red-fire-ball-flame-clip-art-png-image_2388411.jpg",
-      //       ),
-      //     ),
-      //   );
-      // }),
+    return Scaffold(
+      appBar: AppBar(title: Text("Images"),),
+      body: GridView.extent(
+        maxCrossAxisExtent: 150.0,
+        mainAxisSpacing: 5.0,
+        crossAxisSpacing: 5.0,
+        padding: const EdgeInsets.all(5.0),
+        children: _buildGridTiles(12),
+        //crossAxisCount: 3,
+        // children: List.generate(9, (index) {
+        //   return Center(
+        //     child: Card(
+        //       elevation: 8.0,
+        //       margin: EdgeInsets.all(7.0),
+        //       child: Image.network(
+        //       "https://png.pngtree.com/png-clipart/20201105/ourlarge/pngtree-orange-red-fire-ball-flame-clip-art-png-image_2388411.jpg",
+        //       ),
+        //     ),
+        //   );
+        // }),
+      ),
     );
   }
 }
