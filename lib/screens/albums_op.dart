@@ -1,4 +1,5 @@
 import 'package:camera_op/screens/image_view.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class AlbumsOp extends StatefulWidget {
@@ -34,7 +35,7 @@ class _AlbumsOpState extends State<AlbumsOp> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Image.asset('images/folder2.jpg',width: 100,),
-                    Text("Folder Name"),
+                    Text(" Folder Name",style: TextStyle(fontWeight: FontWeight.w400,fontSize: 20),),
                   ],
                 ),
               ),
@@ -45,3 +46,4 @@ class _AlbumsOpState extends State<AlbumsOp> {
     );
   }
 }
+
